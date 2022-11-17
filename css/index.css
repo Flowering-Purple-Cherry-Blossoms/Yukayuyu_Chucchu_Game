@@ -1,0 +1,70 @@
+@charset 'UTF-8';
+
+/* Font */
+@font-face {
+	font-family: 'UtsukushiFont';
+	src: url('../resources/UtsukushiFONT.otf') format('opentype');
+}
+
+@media all {
+	* {
+		appearance: none;
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		background-repeat: no-repeat;
+		border: none;
+		font-family: 'UtsukushiFont', 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+		margin: 0px;
+		outline: none;
+		overflow: hidden;
+		padding: 0px;
+	}
+
+	#head_navi {
+		background: #98aed8;
+
+		font-size: large;
+	}
+	#head_navi ul {
+		display: flex;
+		margin: 0 auto;
+		padding: 0 3%;
+		width: 94%;
+		max-width: 960px;
+		list-style-type: none;
+	}
+	#head_navi ul li {
+		position: relative;
+		width: 20%;
+	}
+	#head_navi ul li:first-child::before {
+		position: absolute;
+		display: block;
+		content: '';
+		top: 25%;
+		left: 0px;
+		width: 1px;
+		height: 50%;
+		background-color: #db7fa8;
+	}
+	#head_navi ul li::after {
+		position: absolute;
+		display: block;
+		content: '';
+		top: 25%;
+		right: 0px;
+		width: 1px;
+		height: 50%;
+		background-color: #db7fa8;
+	}
+	#head_navi ul li a {
+		display: block;
+		padding: 17px 10px;
+		color: #fff;
+		text-align: center;
+		text-decoration: none;
+	}
+	#head_navi ul li a:hover {
+		background-color: #685397;
+	}
+}
